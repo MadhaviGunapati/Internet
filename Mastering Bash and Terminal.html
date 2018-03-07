@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://www.blockloop.io/mastering-bash-and-terminal/ -->
+<html class="gr__blockloop_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Mastering Bash and Terminal</title>
+    <meta name="description" content="">
+
+    <script src="./Mastering Bash and Terminal_files/Nd5ko99AnD-yZ1XyDMbclEFBmwo.js.download"></script><script type="text/javascript" async="" src="./Mastering Bash and Terminal_files/js"></script><link rel="icon" href="https://www.blockloop.io/favicon.ico">
+    <link rel="stylesheet" href="./Mastering Bash and Terminal_files/css">
+    <link rel="stylesheet" type="text/css" href="./Mastering Bash and Terminal_files/main.min.css">
+
+    <link rel="shortcut icon" href="https://www.blockloop.io/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://www.blockloop.io/mastering-bash-and-terminal/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://www.blockloop.io/mastering-bash-and-terminal/amp/">
+    
+    <meta property="og:site_name" content="blockloop.io">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Mastering Bash and Terminal">
+    <meta property="og:description" content="If there is one tool that every developer uses regardless of language, platform, or framework it&#39;s the terminal. If we are not compiling code, executing git commands, or scp-ing ssl certificates to some remote server, we are finding a new version of cowsay to entertain ourselves while we wait on">
+    <meta property="og:url" content="https://www.blockloop.io/mastering-bash-and-terminal/">
+    <meta property="article:published_time" content="2017-01-14T03:46:00.000Z">
+    <meta property="article:modified_time" content="2017-10-11T20:42:00.000Z">
+    <meta property="article:tag" content="bash">
+    <meta property="article:tag" content="workflow">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mastering Bash and Terminal">
+    <meta name="twitter:description" content="If there is one tool that every developer uses regardless of language, platform, or framework it&#39;s the terminal. If we are not compiling code, executing git commands, or scp-ing ssl certificates to some remote server, we are finding a new version of cowsay to entertain ourselves while we wait on">
+    <meta name="twitter:url" content="https://www.blockloop.io/mastering-bash-and-terminal/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Brett">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="bash, workflow">
+    <meta name="twitter:creator" content="@blockloop">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "blockloop.io",
+        "logo": "https://casper.ghost.org/v1.0.0/images/ghost-logo.svg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Brett",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/aa7a1efbbc8b24a85f7b95a4739909b0?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://www.blockloop.io/author/brett/",
+        "sameAs": [
+            "https://www.blockloop.io/",
+            "https://twitter.com/blockloop"
+        ]
+    },
+    "headline": "Mastering Bash and Terminal",
+    "url": "https://www.blockloop.io/mastering-bash-and-terminal/",
+    "datePublished": "2017-01-14T03:46:00.000Z",
+    "dateModified": "2017-10-11T20:42:00.000Z",
+    "keywords": "bash, workflow",
+    "description": "If there is one tool that every developer uses regardless of language, platform, or framework it&#x27;s the terminal. If we are not compiling code, executing git commands, or scp-ing ssl certificates to some remote server, we are finding a new version of cowsay to entertain ourselves while we wait on",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.blockloop.io/"
+    }
+}
+    </script>
+
+    <script type="text/javascript" src="./Mastering Bash and Terminal_files/ghost-sdk.min.js.download"></script>
+<script type="text/javascript">
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "3690115c0375"
+});
+</script>
+    <meta name="generator" content="Ghost 1.17">
+    <link rel="alternate" type="application/rss+xml" title="blockloop.io" href="https://www.blockloop.io/rss/">
+    <style type="text/css">
+    nav.pagination { display: none; }
+</style>
+<script type="text/javascript" async="" src="./Mastering Bash and Terminal_files/in.php"></script></head>
+
+<body class="post-template tag-bash tag-workflow" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+
+    <div class="wrapper">
+        <div class="post">
+        <div class="post__back">
+                <a href="https://www.blockloop.io/">&lt;-- home</a>
+        </div>
+        <div class="post__title">
+                <h1>Mastering Bash and Terminal</h1>
+        </div>
+        <div class="post__date">
+                <p>Jan 13, 2017</p>
+        </div>
+        <div class="post__meta">
+		 <p><a href="https://www.blockloop.io/tag/bash/">bash</a>, <a href="https://www.blockloop.io/tag/workflow/">workflow</a></p> 
+                <span class="reading-time" title="Estimated read time">12 mins</span>
+        </div>
+        <div class="post__content" ?="">
+                <div class="kg-card-markdown"><p>If there is one tool that every developer uses regardless of language, platform, or framework it's the terminal. If we are not compiling code, executing git commands, or scp-ing ssl certificates to some remote server, we are finding a new version of cowsay to entertain ourselves while we wait on one of the former. As much as we use the terminal it is important that we are efficient with it. Here are some ways I make my time in the terminal efficient and effective.</p>
+<h2 id="assumedsettings">Assumed Settings</h2>
+<p>Some of these commands list <code>alt</code> as a prefix character. This is because I have manually set <code>alt</code> as a meta key. Without this setting enabled you have to use the <code>esc</code> key instead. I recommend enabling the alt key. In Mac Terminal.app this setting is Preferences &gt; Profiles tab &gt; Keyboard sub-tab &gt; at the bottom "Use option as meta key." In iTerm2 the setting is at Preferences &gt; Profiles tab &gt; Keys sub-tab &gt; at the bottom of the window set "left/right option key acts as" to "+Esc". In GNOME terminal Edit &gt; Keyboard Shortcuts &gt; uncheck "Enable menu access keys."</p>
+<p>I also assume you're using bash. I know there are some cool newcomers out there like zsh and fish, but after trying others out I always found that some of my utilities were missing or ill-replaced. If you are not using bash then YMMV.</p>
+<p>I also assume you are using at least bash version 4. If you're on a Mac then, unless you have manually installed bash with homebrew, you are using an old version. Install bash with homebrew and include it in <code>/etc/shells</code>.</p>
+<h2 id="repeatcommands">Repeat Commands</h2>
+<p>I spend a lot of my time in terminal repeating commands that I have previously run. One thing I noticed a lot of people do is use the up and down arrows to navigate their history of commands. This is terribly inefficient. It requires repositioning your hands and often times removing your eyes from the computer screen. Also, your history (depending on your HISTSIZE) can be very long. Using the up and down arrows is almost like searching through a terrible version of the Oxford English Dictionary which has one word per page. Instead of searching line-by-line I use search history  (<code>ctrl-r</code> and <code>ctrl-s</code>).</p>
+<p>In your terminal window, before you type any text press <code>ctrl-r</code> and you should see your prompt change to <code>(reverse-i-search):</code>. Now begin typing any part of any previous command you have executed and you will see the most recent command which matches your search. If this is not the one you want, press <code>ctrl-r</code> again to search incrementally. For example, if you are searching for <code>kubectl delete pods -l=app=nginx</code> you would type <code>kubectl</code> or <code>kubectl del</code>. You should land on that command. If, while incrementally searching backward, you pass the one you're looking for, press <code>ctrl-s</code> to go the other direction and you will see your prompt change to <code>(i-search):</code>. Once you find the command you want press enter to execute it or move the cursor left/right to modify the command first.</p>
+<p><em>NOTE  <code>ctrl-s</code> probably won't work by default for most terminals. You will need to add <code>stty -ixon</code> to your <code>~/.bashrc</code> (<code>~/.bash_profile</code> for Mac).</em></p>
+<p>Sometimes you know that the command that you want to repeat is only two or three places back in history. In these cases it is sometimes easier to move up to that command directly. But you still should not use the arrow keys. Bash has keyboard shortcuts for this too! Here is where we use <code>ctrl-p</code> for "previous" or <code>ctrl-n</code> for "next." Pressing <code>ctrl-p</code> moves to the previous command in history (replacing the up arrow), and <code>ctrl-n</code> moves to the next command (replacing the down arrow).</p>
+<p>In mose cases your history will probably be set to record duplicates. This gets pretty annoying for me so I use the following setting to make sure my history doesn't get flooded with duplicate entries. Add this to your <code>~/.bashrc</code> or <code>~/.bashprofile</code> and your history will only keep the newest versions of commands. If you typed <code>git status</code> seven times, it will only record the latest one and delete the previous entries.</p>
+<pre><code class="language-bash hljs"><span class="hljs-built_in">export</span> HISTCONTROL=ignoreboth:erasedups
+</code></pre>
+<h2 id="movements">Movements</h2>
+<p>Now that we know we don't need the up and down arrow keys, what about the left and right? Unfortunately, these keys are still needed for single character movements, but I find myself using them less often. Here are some key combinations to move your cursor a little more efficiently.</p>
+<ol>
+<li><code>ctrl-a</code> - move the cursor to the beginning of the current line</li>
+<li><code>ctrl-e</code> - move the cursor to the end of the current line</li>
+<li><code>alt-b</code> - move the cursor backwards one word</li>
+<li><code>alt-f</code> - move the cursor forward one word</li>
+<li><code>ctrl-k</code> - delete from cursor to the end of the line</li>
+<li><code>ctrl-u</code> - delete from cursor to the beginning of the line</li>
+<li><code>alt-d</code> - delete the word in front of the cursor</li>
+<li><code>ctrl-w</code> - delete the word behind of the cursor</li>
+</ol>
+<p>The last four aren't necessarily movements, but I use them in conjunction most of the time.</p>
+<h2 id="copypaste">Copy / Paste</h2>
+<p>One of my favorite MacOS command line utilities is <code>pbcopy</code>/<code>pbpaste</code>. I like them so much that I created the aliases for my linux machines using <code>xclip</code> (shared below). These two commands use your system clipboard (also called the pasteboard, hence the names). You can pipe data to <code>pbcopy</code> to copy something to your system clipboard or you can pipe <code>pbpaste</code> to another command to paste from your clipboard. Here are some examples that I use:</p>
+<pre><code class="language-bash hljs"><span class="hljs-comment"># copy my public ssh key to system clipboard for pasting into Github</span>
+pbcopy &lt; ~/.ssh/id_rsa.pub
+
+<span class="hljs-comment"># paste something I've copied from the internet to a file</span>
+pbpaste &gt; main.go
+
+<span class="hljs-comment"># append something I've copied from the internet to the END a file</span>
+pbpaste &gt;&gt; main.go
+
+<span class="hljs-comment"># copy my public IP address to clipboard</span>
+curl -Ss icanhazip.com | pbcopy
+
+<span class="hljs-comment"># copy my private IP address to clipboard</span>
+<span class="hljs-comment"># it's probably a good idea to alias this</span>
+ip addr show en0 | grep -inet\ | awk <span class="hljs-string">'{ print $3 }'</span> | awk -F/ <span class="hljs-string">'{print $1}'</span> | pbcopy
+
+<span class="hljs-comment"># replace what is in my clipboard with the base64 encoded version of itself</span>
+pbpaste | base64 | pbcopy
+</code></pre>
+<p>In linux, I put the following in my ~/.bashrc to create the same effect.</p>
+<pre><code class="language-bash hljs"><span class="hljs-built_in">alias</span> pbcopy=<span class="hljs-string">'xclip -selection clipboard'</span>
+<span class="hljs-built_in">alias</span> pbpaste=<span class="hljs-string">'xclip -selection clipboard -o'</span>
+</code></pre>
+<h2 id="changingdirectories">Changing Directories</h2>
+<p><code>cd</code> is one of my most used commands according to my bash history. One thing I find myself doing a lot is changing between two directories or briefly changing from directory a to directory b and then back to a. Depending on the reason I'm changing directories I will use either <code>cd -</code> or a combination of <code>pushd</code> and <code>popd</code>. If you type <code>cd -</code> and press enter, you will change to your previous working directory.</p>
+<pre><code class="language-bash hljs"><span class="hljs-built_in">cd</span> ~/go/
+<span class="hljs-built_in">cd</span> ~/tmp/
+<span class="hljs-built_in">cd</span> - <span class="hljs-comment"># &lt;- this puts you back to ~/go/</span>
+<span class="hljs-built_in">cd</span> - <span class="hljs-comment"># &lt;- this puts you back to ~/tmp/</span>
+</code></pre>
+<p>On the other hand, sometimes I know that I want to go to some directory in a different place, but I might <code>cd</code> a few times to get there, but I want to mark my place so that I can get back quicker. In this case, you would use <code>pushd</code> like this.</p>
+<pre><code class="language-bash hljs"><span class="hljs-built_in">cd</span> ~/go/
+<span class="hljs-built_in">pushd</span> ~/tmp/ <span class="hljs-comment"># mark your current directory and cd to ~/tmp/</span>
+<span class="hljs-built_in">cd</span> ssl
+<span class="hljs-built_in">cd</span> certificates
+<span class="hljs-comment"># cd - &lt;- this would take you back to ~/tmp/ssl because it is the previous working directory</span>
+<span class="hljs-built_in">popd</span> <span class="hljs-comment"># &lt;- this takes you back to ~/go/</span>
+</code></pre>
+<p>You can <code>pushd</code> multiple times to build a stack. I don't find myself doing this much, but it's there if you need it.</p>
+<h2 id="backgroundprocesses">Background Processes</h2>
+<p>One of my pet peves about working with other software developers is that they almost always have ten or more terminal windows open at all times. Usually, they will have one terminal per directory they are working with (this can be avoided by using <code>pushd</code>, <code>popd</code>, and <code>cd</code> tricks mentioned above). But often they will have a few windows open that are running processes which have locked the window. This is difficult to work with because it requires flipping back and forth and knowing where everything is. For executing processes I like to use a mixture of some commands.</p>
+<p>If you need to run a command indefinitely you can send it to the background by first running it and then pressing <code>ctrl-z</code>. This will <em>suspend</em> or <em>pause</em> the process. After it has been suspended, type <code>bg</code> and press enter. This will move it to a <em>running</em> state, but it will no longer have control of your terminal window. However, if you close the terminal that job will terminate. To avoid this, you <em>disown</em> the process by typing <code>disown</code> and pressing enter. At this point the process is no longer a child of your current terminal process. I often use this to run <code>kubectl proxy</code> or <code>python -m SimpleHTTPServer</code>.</p>
+<ol>
+<li><code>ctrl-z</code> - move the current process to the background in a <em>suspended</em> state.</li>
+<li><code>jobs -l</code> - list the current background processes for the current tty session.</li>
+<li><code>bg</code> - tell the most recent background process to continue running in the background</li>
+<li><code>fg</code> - bring the most recent background process back to the foreground</li>
+<li><code>disown -h</code> - disown the most recent background job. This will remove it from your current tty session. It will not be able to be brought back to the foreground. You will have to control it either with <code>kill</code> or something else.</li>
+</ol>
+<p><code>bg</code>, <code>fg</code>, and <code>disown</code> can be used with the job number found in <code>jobs -l</code>. If you run <code>jobs -l</code> you will see the job number at the beginning of the line. If you want to bring the 2nd job to the foreground you run <code>fg %2</code>. If you want to disown the fourth job then you run <code>disown -h %4</code>, and so on. The plus sign (or minus sign) at the bigging of the line has meaning as well. A plus sign indicates that the job is the most recently used, or the one that will be targeted if you type any of the commands without a job ID. The minus sign is the second most recently used.</p>
+<p><img src="./Mastering Bash and Terminal_files/disown.gif" alt="disown"></p>
+<p>I use <code>ctrl-z</code> a lot because I use a single terminal window for vim and as my command line interface. When I'm writing code in vim and I need to get back to my shell prompt I use <code>ctrl-z</code> to suspend vim. <em>NOTE this will still print stdout and stderr to your command window. If you want to change that then you can redirect to files</em></p>
+<p>I modified my <code>PS1</code> to show my current background job count.</p>
+<pre><code class="language-bash hljs"><span class="hljs-keyword">function</span> jobs_count {
+	cnt=$(<span class="hljs-built_in">jobs</span> -l | wc -l)
+	<span class="hljs-keyword">if</span> [ <span class="hljs-variable">$cnt</span> -gt 0 ]; <span class="hljs-keyword">then</span>
+		<span class="hljs-built_in">echo</span> -ne <span class="hljs-string">" \e[93m<span class="hljs-variable">${cnt}</span>\e[m"</span>
+	<span class="hljs-keyword">fi</span>
+}
+<span class="hljs-comment"># then you can add \`jobs_count\` to the end of your PS1 like this</span>
+<span class="hljs-built_in">export</span> PS1=<span class="hljs-string">"\[\e[32m\]\u\[\e[m\]@\[\e[32m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\`git_branch\`\`jobs_count\`\n\$ "</span>
+</code></pre>
+<p><img src="./Mastering Bash and Terminal_files/jobs-count-ss.png" alt="jobs-count-ss"></p>
+<h2 id="workingwithfiles">Working With Files</h2>
+<p>Several times throughout the day I want to view the contents of a file. Before, I would <code>cat</code> the file or open it in <code>vim</code>. <code>cat</code> was annoying because it flooded my terminal history. This is when I learned to use <code>less</code> to open files with pagination. When you open a file with <code>less</code> the contents of the file become paginated and you start at page one. What's great about <code>less</code> is that many of my favorite key combinations work. You can use <code>ctrl-u</code> to page up, <code>ctrl-d</code> to page down, <code>ctrl-p</code> to scroll up one line, <code>ctrl-n</code> to scroll down one line, <code>g</code> goes to the top of the file, <code>G</code> goes to the bottom of the file, and <code>/</code> searches the file.</p>
+<p>While <code>less</code> is great for opening files, I may not know where the file is in the first place. Say I have a file named "auth.py" but I don't remember exactly where I put it. I could <code>cd</code> back and forth until I find it, or do what some people do and run <code>start .</code> and browse for it in a UI window (terrible workflow). Instead, I use either <code>find</code>, <code>ag</code> (silver searcher), or <code>tree</code>. <code>find</code> is great for searching by file name. You can run <code>find . -type f -name auth.py</code> to search the current directory for a file named "auth.py". <code>tree</code> is great for listing a directory in a tree format (much like how you see it in a UI). <code>ag</code> is an applciation called "the silver searcher." It is essentially a modernized version of <code>grep</code> and I find myself using it quite often. It's better than <code>grep</code> in that it automatically ignores commonly ignored files such as the .git directory, virtualenv, and anything listed in your .gitignore. I like silver searcher because the command line arguments are very similar to <code>grep</code> so my flags are generally transferrable. <em>Note It's best to combine these commands with <code>less</code> because they will likely flood your terminal history</em>.</p>
+<h2 id="chooseafewtostartwith">Choose a Few to Start With</h2>
+<p>I did not use all of these when I first started using bash, nor did I memorize them all at once. I picked up one or two here and there over the years. It's difficult to memorize key combinations, especially when there are so many of them. Pick one or two shortcuts and focus on using them. I find myself using these commands by muscle memory, not by memorizing each keyboard shortcut. In fact, once I started to write this I had to open up the terminal and work around to remember which shortcuts I use. I hope these help you work with bash and terminal more effectively. It is easy to learn one new trick and force yourself to use it for a few days until you get used to it. Once you are comfortable with that command, pick up another one.</p>
+</div>
+        </div>
+
+        <script>
+                function readingTime(i){var n=(i=i||"").split(/\S+/).length;return n<360?"1 min":Math.floor(n/180)+" mins"}
+                document.querySelector(".reading-time").innerHTML = readingTime(document.querySelector('.post__content').innerText);
+        </script>
+
+        <link rel="stylesheet" href="./Mastering Bash and Terminal_files/ocean.min.css" integrity="sha256-ZTdy61cIJQM++QdEY02F38CnlvWY6L8WFdH0lS47c2Q=" crossorigin="anonymous">
+        <script src="./Mastering Bash and Terminal_files/highlight.min.js.download" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+</div>
+
+    </div>
+
+   <img alt="Clicky" width="1" height="1" src="./Mastering Bash and Terminal_files/100930284ns.gif">
+
+
+
+
+</body></html>
